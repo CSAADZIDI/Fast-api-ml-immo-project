@@ -1,0 +1,8 @@
+pandas
+fastapi
+requests
+scikit-learn
+xgboost
+numpy
+matplotlib
+seaborn
