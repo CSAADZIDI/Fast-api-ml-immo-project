@@ -6,3 +6,4 @@ xgboost
 numpy
 matplotlib
 seaborn
+uvicorn
