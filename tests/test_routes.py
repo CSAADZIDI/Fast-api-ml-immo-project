@@ -3,8 +3,8 @@ from fastapi.testclient import TestClient
 from fastapi import FastAPI, Request
 from unittest.mock import MagicMock
 
-from your_module_name.routes import router  # remplace par le chemin correct
-from your_module_name.schemas import House, CityHouse  # idem
+from api.routes import router  # remplace par le chemin correct
+from api.schemas import House, CityHouse  # idem
 
 app = FastAPI()
 app.include_router(router)
