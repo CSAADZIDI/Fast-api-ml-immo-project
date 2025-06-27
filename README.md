@@ -37,9 +37,9 @@ L'objectif est de construire un modèle de prédiction du prix au m² à Lille e
 - Ajout d’un modèle avancé : XGBRegressor
 - Évaluation via le MSE et comparaison des performances par type de bien
 
-<img src="img/image_cmp_mse_maison.png" width="400" height ="250" /> | <img src="img/image_cmp_mse_appart.png" width="400" height ="250" />
+![alt text](img/image_perf_lille.png)
 
-👉 Cette étape pose les bases d’un futur outil d’estimation différencié appartement vs maison.
+
 
 ### 🧪 Phase 2 — Test de Généralisation sur Bordeaux
 L'objectif est d'évaluer la capacité de généralisation des modèles entraînés sur Lille en les testant sur les logements 4 pièces vendus à Bordeaux en 2022.
@@ -55,7 +55,7 @@ L'objectif est d'évaluer la capacité de généralisation des modèles entraîn
 - Calcul des erreurs quadratiques moyennes (MSE)
 - Comparer les performances entre Lille et Bordeaux :
 
-
+![alt text](img/image_cmp_perf.png)
 
 ### 🌐 Phase 3 — API REST d'estimation du prix au m² (FastAPI)
 L'objectif est d'exposer les modèles prédictifs de Lille (Phase 1) et Bordeaux (Phase 2) via une API REST professionnelle et réutilisable utilisant FastAPI.

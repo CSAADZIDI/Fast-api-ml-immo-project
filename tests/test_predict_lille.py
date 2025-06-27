@@ -1,10 +1,20 @@
-from fastapi.testclient import TestClient
-from api.main import app
+import requests
 
-client = TestClient(app)
+def test_prediction_lille():
+    url = "http://localhost:8000/predict/lille"  
+    payload = {
+        "surface_bati": 100.0,
+        "nombre_pieces": 4,
+        "type_local": "appartement",
+        "surface_terrain": 0.0,
+        "nombre_lots": 1
+    }
+    response = requests.post(url, json=payload)
+    assert response.status_code == 200
 
-def test_main():
-    response = client.get("/")
-    
-    
-#curl -X POST http://127.0.0.1:8000/predict/lille -H "Content-Type: application/json" -d '{"surface_bati": 100,"nombre_pieces": 4,"surface_terrain": 200,"nombre_lots": 1,"type_local": "Maison"}
+    data = response.json()
+    assert "prix_m2_estime" in data
+    assert data["ville_modele"].lower() == "lille"
+    assert "model" in data
+
+# Pour lancer ce test :cd tests/ puis  python -m pytest test_predict_bordeaux.py

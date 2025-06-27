@@ -1,2 +1,6 @@
 .env
 .pytest_cache
+venv/
+data/
+raw_data/
+models/

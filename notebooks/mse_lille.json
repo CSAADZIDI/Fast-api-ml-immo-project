@@ -1,0 +1,18 @@
+{
+    "appartements": {
+        "LinearRegression": 0.8669959900088646,
+        "DecisionTreeRegressor": 0.44545363791923653,
+        "RandomForestRegressor": 0.232106819261709,
+        "DecisionTreeRegressorOptimized": 0.542259927589573,
+        "RandomForestRegressorOptimized": 0.21725535527204604,
+        "XGBRegressor": 0.20864460313994515
+    },
+    "maisons": {
+        "LinearRegression": 0.8649826558371496,
+        "DecisionTreeRegressor": 2.2817934508514672,
+        "RandomForestRegressor": 1.2132078618264717,
+        "DecisionTreeRegressorOptimized": 1.128891885397799,
+        "RandomForestRegressorOptimized": 1.0350889352792056,
+        "XGBRegressor": 0.8531133925429333
+    }
+}
