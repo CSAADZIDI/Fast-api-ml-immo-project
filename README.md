@@ -73,6 +73,7 @@ L'objectif est d'exposer les modèles prédictifs de Lille (Phase 1) et Bordeaux
 
 
 🔧 Tests
+
 L’API a été testée à l’aide de Postman et via des appels cURL, afin de valider la bonne exécution des prédictions pour chaque ville.
 
 ![alt text](img/image_postman.png)
@@ -98,12 +99,12 @@ L’API a été testée à l’aide de Postman et via des appels cURL, afin de v
 │   ├── phase_1_lille.ipynb
 │   └── phase_2_bordeaux.ipynb
 │
-├── app/                              # Code source de l’API FastAPI
-│   ├── main.py                       # Point d’entrée FastAPI, routes des prédictions
-│   ├── predict.py                    # Fonctions de prédiction
-│   ├── model_loader.py               # Chargement des modèles ML
+├── api/                              # Code source de l’API FastAPI
+│   ├── main.py                       # Point d’entrée FastAPI, 
+│   ├── services.py                    # Fonctions de prédiction
+│   ├── models.py                     # Chargement des modèles ML
 │   ├── schemas.py                    # Modèles Pydantic pour validation des requêtes
-│   └── utils.py                      # Prétraitement, nettoyage, encodage
+│   └── routes.py                      # Routes des prédictions
 │
 ├── tests/                            # Tests unitaires avec pytest
 │   ├── test_predict_lille.py
